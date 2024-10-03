@@ -1,0 +1,159 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #fff;
+  --font-color: #333;
+  --header-bg: #222;
+  --body-bg: #f4f4f4;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: var(--body-bg);
+  color: var(--font-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+p {
+  line-height: 1.6;
+  margin: 0.5rem 0;
+  font-size: x-large;
+}
+
+header.app-header {
+  background-color: var(--header-bg);
+  color: var(--secondary-color);
+  padding: 2rem;
+  border-bottom: 4px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header.app-header .header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.5rem;
+  border: 4px solid var(--primary-color);
+}
+
+header.app-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header.app-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#projects ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.certificates {
+  background-color: var(--secondary-color);
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.certificate {
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.certificate:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certificate img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.certificate h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  header.app-header h1 {
+    font-size: 2.5rem;
+  }
+
+  header.app-header p {
+    font-size: 1rem;
+  }
+
+  header.app-header {
+    padding: 1rem;
+  }
+
+  .header-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+  }
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+
+.project-item {
+  width: 600px;
+  text-align: center;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
